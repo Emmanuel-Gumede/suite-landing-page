@@ -74,6 +74,7 @@
       font-size: convert_px(16);
       font-weight: 400;
       line-height: convert_px(26);
+      text-transform: uppercase;
       text-align: center;
       letter-spacing: convert_px(2.5);
       color: $black;
@@ -135,6 +136,7 @@
       line-height: convert_px(32);
       letter-spacing: convert_px(-0.18);
       color: $white;
+      text-transform: uppercase;
       text-align: center;
       margin: 0.25rem 0;
     }
@@ -146,6 +148,7 @@
       line-height: convert_px(26);
       letter-spacing: convert_px(2.5);
       color: $white;
+      text-transform: uppercase;
       text-align: center;
     }
   }

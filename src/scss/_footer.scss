@@ -23,13 +23,21 @@
   }
 
   p {
+    font-family: inherit;
+    font-style: normal;
+    font-size: convert_px(15);
+    font-weight: 400;
+    line-height: convert_px(32);
+    letter-spacing: convert_px(0.0833333);
+    color: $grey;
     text-align: center;
   }
 
   div {
     justify-self: center;
     img {
-      margin: 0 0.75rem;
+      height: convert_px(20);
+      margin: 0 0.5rem;
     }
   }
 }
