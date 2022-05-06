@@ -1,0 +1,11 @@
+@function convert($value, $currentUnit, $convertUnit) {
+    
+    //converting px to rem
+    @if $currentUnit == px {
+        @return calc($value / 16) + 0rem;
+    }
+}
+
+@function convert_px($value) {
+    @return calc($value / 16) + 0rem;
+}

@@ -1,0 +1,45 @@
+@use "header";
+@use "constants";
+@use "main";
+@use "functions" as *;
+@use "footer";
+
+html {
+  box-sizing: border-box;
+  width: 100vw;
+}
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+body {
+  width: convert_px(375);
+  font-family: "Epilogue", sans-serif;
+  margin: 0 auto;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  font-family: inherit;
+  border: none;
+  cursor: pointer;
+  background-color: unset;
+}

@@ -1,0 +1,35 @@
+@use "functions" as *;
+@use "constants" as *;
+
+.footer {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, 1fr);
+  justify-content: center;
+  align-items: center;
+  height: convert_px(150);
+  margin-top: convert_px(52);
+  margin-bottom: convert_px(80);
+
+  h2 {
+    font-family: inherit;
+    font-size: convert_px(32);
+    font-weight: 700;
+    font-style: normal;
+    line-height: convert_px(32);
+    letter-spacing: convert_px(-0.444444);
+    color: $black;
+    text-align: center;
+  }
+
+  p {
+    text-align: center;
+  }
+
+  div {
+    justify-self: center;
+    img {
+      margin: 0 0.75rem;
+    }
+  }
+}

@@ -1,0 +1,152 @@
+@use "constants" as *;
+@use "functions" as *;
+
+.main {
+  margin: 4rem 0;
+  //   display: flex;
+  //   flex-direction: column;
+
+  &__image-1 {
+    width: convert(151.47, px, rem);
+    height: convert(19, px, rem);
+    margin-left: convert_px(156);
+  }
+
+  &__h-1 {
+    font-family: inherit;
+    font-size: convert(38, px, rem);
+    line-height: convert(44, px, rem);
+    font-weight: 400;
+    margin: 0 1rem;
+
+    span {
+      font-weight: 700;
+    }
+  }
+
+  &__p {
+    font-family: inherit;
+    font-weight: 400;
+    font-size: convert_px(16);
+    line-height: convert_px(28);
+    letter-spacing: convert_px(0.09);
+    color: $grey;
+    margin: 2rem 1rem;
+  }
+
+  &__button {
+    width: convert(256, px, rem);
+    height: convert(61, px, rem);
+    background-color: $black;
+    color: $white;
+    border: none;
+    margin: 0 1rem;
+    font-family: inherit;
+    font-size: convert_px(18);
+    line-height: convert_px(32);
+    letter-spacing: convert_px(-0.18);
+    border-radius: convert_px(6);
+
+    &:hover {
+      background: linear-gradient(135deg, #a060ff 0%, #cb30e3 49.21%, #ffa84e 100%);
+    }
+  }
+
+  &__image-2 {
+    width: convert(343, px, rem);
+    height: convert(240, px, rem);
+    margin: convert_px(55.68) 1rem convert_px(24);
+  }
+
+  &__stats {
+    h2 {
+      font-family: inherit;
+      font-size: convert_px(48);
+      font-weight: 700;
+      line-height: convert_px(56);
+      text-align: center;
+      color: $black;
+      margin: 2rem 0 0 0;
+    }
+
+    p {
+      font-family: inherit;
+      font-size: convert_px(16);
+      font-weight: 400;
+      line-height: convert_px(26);
+      text-align: center;
+      letter-spacing: convert_px(2.5);
+      color: $black;
+      margin: 0;
+    }
+  }
+
+  &__testimonial {
+    position: relative;
+    width: convert_px(375);
+    height: convert_px(748);
+    background-color: $black;
+    border-radius: convert_px(15);
+    margin-top: convert_px(237);
+
+    .jeremy {
+      margin-top: convert_px(-181);
+      margin-left: 4rem;
+      height: convet_px(402);
+    }
+
+    .curve {
+      height: convert_px(40);
+      margin-left: convert_px(163);
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+    }
+
+    h2 {
+      font-family: inherit;
+      font-size: convert_px(40);
+      font-weight: 400;
+      line-height: convert_px(48);
+      text-align: center;
+      letter-spacing: convert_px(-0.416667);
+      color: $white;
+
+      span {
+        font-weight: 700;
+      }
+    }
+
+    p {
+      font-family: inherit;
+      font-size: convert_px(18);
+      font-style: normal;
+      font-weight: 400;
+      line-height: convert_px(32);
+      text-align: center;
+      letter-spacing: convert_px(0.09);
+      color: $white;
+      margin: convert_px(40) 1rem;
+    }
+
+    .testimonial-name {
+      font-family: inherit;
+      font-size: convert_px(18);
+      font-weight: 700;
+      line-height: convert_px(32);
+      letter-spacing: convert_px(-0.18);
+      color: $white;
+      text-align: center;
+      margin: 0.25rem 0;
+    }
+
+    .testimonial-title {
+      font-family: inherit;
+      font-size: convert_px(16);
+      font-weight: 400;
+      line-height: convert_px(26);
+      letter-spacing: convert_px(2.5);
+      color: $white;
+      text-align: center;
+    }
+  }
+}

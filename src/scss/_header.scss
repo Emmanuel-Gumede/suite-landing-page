@@ -1,0 +1,34 @@
+@use "constants" as *;
+@use "functions" as *;
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 3rem;
+  margin: convert(24, px, rem) convert(16, px, rem);
+
+  &__image {
+    height: convert(32, px, rem);
+  }
+
+  &__button {
+    width: convert(182, px, rem);
+    height: convert(48, px, rem);
+    font-family: inherit;
+    font-size: convert(14, px, rem);
+    font-weight: 700;
+    font-style: normal;
+    line-height: convert(24, px, rem);
+    letter-spacing: convert(-0.14, px, rem);
+    color: $black;
+    border: 1px solid $black;
+    border-radius: convert(6, px, rem);
+
+    &:hover {
+      background-color: $black;
+      color: $white;
+    }
+  }
+}
